@@ -74,7 +74,7 @@ const routes = {
         })}
         rules={{
           foo: (node, children, parent, styles) => (
-            <Text key={node.key} style={styles.foo}>
+            <Text textBreakStrategy="simple" key={node.key} style={styles.foo}>
               {node.content}
             </Text>
           ),

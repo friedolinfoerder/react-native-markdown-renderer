@@ -27,7 +27,7 @@ const rules = {
     );
   },
   label: (node, children, parents, style) => {
-    return <Text key={node.key}>{children}</Text>;
+    return <Text textBreakStrategy="simple" key={node.key}>{children}</Text>;
   }
 };
 export default rules;
